@@ -1,0 +1,22 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1D6CC5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="btn_rect_alpha">#56b3b3b3</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorGreen">#8BC34A</color>
+    <color name="colorRed">#FF5722</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#000000</color>
+    <color name="color_4k">#FF5722</color>
+    <color name="color_1080">#FFC000</color>
+    <color name="color_720">#03A9F4</color>
+    <color name="color_low">#A7A8A8</color>
+</resources>

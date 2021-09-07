@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:paddingLeft="5dp"
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            <ImageButton
+                android:id="@+id/user"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:background="@null"
+                android:src="@drawable/user"
+                android:padding="5dp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.SearchView
+                android:nextFocusUp="@null"
+                android:nextFocusRight="@null"
+                android:nextFocusLeft="@null"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/card_shadow"
+                app:queryHint="搜索视频"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/search_bar"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="26dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@drawable/card_shadow"
+                android:scaleType="fitCenter"
+                android:id="@+id/icon"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:layout_width="21dp"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="21dp"/>
+            <TextView
+                android:layout_toRightOf="@id/icon"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.kai.video.ui.main.CustomTimeView
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <com.kai.video.view.TvTabLayout
+            android:paddingBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:id="@+id/tabs"
+            app:tabIndicatorHeight="5dp"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicator="@drawable/indicator"
+            app:tabIndicatorColor="#045A9E"
+            app:tabIndicatorGravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+        </com.kai.video.view.TvTabLayout>
+
+        <com.kai.video.view.NoScrollViewPager
+            android:layout_marginTop="2dp"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:nextFocusUp="@id/tabs" />
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

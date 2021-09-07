@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="float" />
+        <attr name="realtimeDownsampleFactor" format="float" />
+        <attr name="realtimeOverlayColor" format="color" />
+        <attr name="realtimeBlurRoundCornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ScrollTextView">
+        <attr name="gravity" format="integer">
+            <flag name="start" value="1"/>
+            <flag name="end" value="2"/>
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="center" value="0"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

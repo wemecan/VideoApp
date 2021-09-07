@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/main"
+    android:background="@drawable/video_item_selector"
+    android:focusableInTouchMode="false"
+    android:focusable="true">
+    <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:focusable="false"
+        app:delay_time="3000"
+        app:indicator_drawable_selected="@drawable/banner_indicator"
+        app:banner_layout="@layout/banner"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+    </com.youth.banner.Banner>
+</RelativeLayout>

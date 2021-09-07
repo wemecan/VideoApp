@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/main"
+    android:clickable="true"
+    android:background="@drawable/video_item_selector"
+    android:focusableInTouchMode="false"
+    android:focusable="true">
+
+    <ImageView
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"/>
+    <ImageView
+        android:focusable="false"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/logo"
+        android:layout_margin="10dp"
+        android:id="@+id/logo_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+    </ImageView>
+    <ImageView
+        android:focusable="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <com.kai.video.view.ScrollTextView
+        android:focusable="false"
+        android:layout_margin="5dp"
+        android:layout_below="@id/poster"
+        android:text=""
+        android:lines="1"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

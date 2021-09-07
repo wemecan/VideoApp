@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/darker_gray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:layout_width="match_parent">
+    <TextView
+        android:focusable="false"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

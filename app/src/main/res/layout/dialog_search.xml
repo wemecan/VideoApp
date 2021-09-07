@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:background="#00FFFFFF"
+    android:layout_height="wrap_content">
+    <androidx.leanback.widget.SearchEditText
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/editer"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textSize="25dp"
+        android:hint="全网搜素，享你所享"
+        android:background="@drawable/card_shadow_none"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>
